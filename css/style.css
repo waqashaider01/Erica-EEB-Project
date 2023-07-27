@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+:root {
+    --color-1: rgba(255, 255, 255, 0.87);
+    --color-2: rgba(255, 255, 255, 0.57);
+    --color-3: #FFFFFF;
+    --color-4: #ECECEC;
+    --color-5: #202D35;
+    --color-6: #1E201F;
+    --color-7: #161817;
+    --color-8: #575757;
+    --color-9: #00349A;
+    --color-10: #18BEF0;
+}
+
+body {
+    background-color: var(--color-7) !important;
+}
+
+/* Customized Margin */
+
+.mt-6 {
+    margin-top: 5rem;
+}
+
+/* Customized Padding */
+
+.pe-6 {
+    margin-right: 7rem;
+}
+
+/* -------------------------- HEADER Start -------------------------- */
+
+/* Navbar */
+
+.nav__bar {
+    position: relative;
+    z-index: 1;
+}
+
+/* Toggle Button */
+
+.navbar__toggler {
+    padding: 0px 5px;
+}
+
+.navbar__toggler__svg {
+    color: var(--color-3);
+}
+
+.navbar__toggler:focus {
+    box-shadow: none !important;
+}
+
+/* Nav Items */
+.nav__item a {
+    list-style: none;
+    color: var(--color-2);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.nav__item a:active {
+    color: var(--color-2) !important;
+}
+
+.nav__item a:hover {
+    color: var(--color-10);
+}
+
+.nav__item__border {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__link {
+    height: auto;
+    font-size: 60px;
+    text-align: center;
+    color: #000;
+    opacity: 0.8;
+
+}
+
+.nav__link:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px var(--color-10);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.nav__link:hover:after {
+    transform: scaleX(1);
+}
+
+/* Request A Quote Button */
+
+.header__button {
+    border-radius: 0px;
+    background-color: var(--color-10);
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-9);
+}
+
+.header__button:hover {
+    background: var(--color-9);
+    color: var(--color-3);
+    transition: 0.3s;
+}
+
+/* Background Image */
+
+.index__bg__img {
+    background-image: url(/images/background-img/bg-img.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    object-fit: cover;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 83%;
+    top: 0;
+}
+
+/* -------------------------- HEADER End -------------------------- */
+
+/* -------------------------- MAIN --------------------------  */
+
+/* ---------- Banner 1 Start ---------- */
+
+.banner__1 {
+    position: relative;
+    z-index: 1;
+}
+
+/* -------Banner 1 Row ------- */
+
+/* --- Left column --- */
+
+/* logo */
+
+.main__logo img {
+    width: 200px;
+}
+
+/* content */
+
+.banner__1__content h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: var(--color-2);
+    position: relative;
+    z-index: 1;
+}
+
+.banner__1__content h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 69px;
+    /* color: var(--color-10); */
+    background: radial-gradient(circle at bottom center, #18BEF0 36%, #00349A 56%, #4BABD1 76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* button */
+
+.banner__button {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: var(--color-9);
+    background-color: var(--color-10);
+    padding: 15px 28px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-6);
+    transition: all .3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.banner__button:hover {
+    color: var(--color-1);
+    background-color: var(--color-9) !important;
+    border: 1px solid var(--color-9) !important;
+}
+
+/* --- Right Column --- */
+
+/* image */
+
+/* .banner__1__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner__1__img img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    background-size: cover;
+} */
+
+.carousel__img {
+    height: 700px !important;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: -1px 1px 22px #375559;
+}
+
+/* Positioned Search Container of Banner 1 */
+
+.search__container {
+    width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    margin-top: -16rem;
+}
+
+.search__input {
+    width: 50%;
+    height: 30px;
+    padding: 30px 50px;
+    border: 1px solid var(--color-3);
+    opacity: 0.8;
+    background-color: var(--color-7);
+    border-radius: 20px 0 0 20px;
+}
+
+.search__input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-1);
+}
+
+.location__input {
+    width: 51%;
+    height: 30px;
+    padding: 30px 87px;
+    border: 1px solid var(--color-3);
+    background-color: var(--color-7);
+    opacity: 0.8;
+    border-radius: 0 20px 20px 0;
+    margin-right: 23px;
+    position: relative;
+}
+
+.location__input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-1);
+}
+
+.location__icon {
+    position: absolute;
+    left: 53%;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-1);
+    z-index: 1;
+}
+
+.location__icon i {
+    color: var(--color-7) !important;
+}
+
+.search__button {
+    color: var(--color-9);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    background: var(--color-10);
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.search__button:hover {
+    color: var(--color-1);
+    background: var(--color-9);
+
+}
+
+.search__input,
+.location__input {
+    color: var(--color-3);
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900 !important;
+}
+
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+/* ---------- Banner 1 End ---------- */
+
+/* ---------- Banner 2 Category Slider Start ---------- */
+
+/* Category Carousel Content */
+
+.feature_cat_title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--color-10);
+}
+
+.feature_cat_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: var(--color-3);
+}
+
+/* Carousel Forward and Backward Buttons */
+
+.back_forword_btn {
+    display: flex;
+    justify-content: end;
+}
+
+/* Carousel Cards  */
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.feature_card {
+    border-radius: 10px;
+    position: relative;
+    height: 290px;
+}
+
+.feature_card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.feature_card:hover:before {
+    background-color: rgba(1, 105, 179, 0.479);
+}
+
+.category__icon {
+    width: 62px;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+}
+
+.category__icon img {
+    width: 20%;
+    position: relative;
+    z-index: 100;
+}
+
+.category__icon::before {
+    content: '';
+    background-color: #18BEF0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: -16px;
+    left: -22px;
+    z-index: 0;
+}
+
+/* card content */
+
+.card_text {
+    display: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.card_text:hover {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+/* ---------- Banner 2 Category Slider End ---------- */
+
+/* ---------- Banner 3 Service Cards Start ---------- */
+
+/* Service Cards */
+a_tag a {
+    text-decoration: none;
+    color: var(--color-1);
+    cursor: pointer;
+}
+
+.a_tag a:hover {
+    /* background-image: linear-gradient(to right top, #00349a, #003798, #003a96, #003d94, #024092, #004b9b, #0056a3, #0061ab, #0078bf, #008fd1, #00a6e1, #18bef0); */
+    background-color: var(--color-10);
+    color: var(--color-1);
+    transition: 0.3s;
+}
+
+.gallery_card {
+    background-color: var(--color-4);
+    border-radius: 10px;
+}
+
+.gallery_card1 {
+    background-color: var(--color-6);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 1px var(--color-10),
+        0 0 1px var(--color-10),
+        0 0 5px var(--color-10),
+        0 0 10px var(--color-10),
+        0 0 10px var(--color-10),
+        0 0 0px var(--color-10);
+    -webkit-animation: blink 0.7s infinite alternate;
+    animation: blink 0.7s infinite alternate;
+    text-decoration: none;
+}
+
+.gallery_card1:hover {
+    background-color: var(--color-5);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 2px var(--color-9), 0 0 10px var(--color-9), 0 0 5px var(--color-9), 0 0 5px var(--color-9),
+        0 0 5px var(--color-9), 0 0 5px var(--color-9);
+    -webkit-animation: blink 0.7s infinite alternate;
+    animation: blink 0.7s infinite alternate;
+}
+
+.gallery_img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.gallery_img img {
+    width: 100% !important;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.gallery_text {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-3);
+    letter-spacing: 0.05em;
+    margin-bottom: 0 !important;
+}
+
+/* View All Service Button */
+
+.view_all_btn {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    padding: 15px 30px;
+    background: var(--color-10);
+    color: var(--color-9);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.view_all_btn:hover {
+    background: var(--color-9) !important;
+    color: var(--color-3);
+}
+
+/* ---------- Banner 3 Service Cards End ---------- */
+
+/* ---------- Banner 4 Request a Quote Start ---------- */
+
+/* Parallex on Background image */
+
+.parallax-1 {
+    height: 50vh;
+    background: url('/images/retuest-a-quote/quotebgd.png') repeat fixed 70%;
+    background-size: cover;
+    color: aliceblue;
+}
+
+.parallax-inner {
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+/* Parallex Content */
+
+.request__content {
+    margin-top: -12rem;
+}
+
+.request_free_text {
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.25em;
+    color: var(--color-1);
+}
+
+.free_quote_btn {
+    background: var(--color-3);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: var(--color-7);
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.free_quote_btn:hover {
+    background: var(--color-7);
+    color: var(--color-3);
+}
+
+/* ---------- Banner 4 Request a Quote End ---------- */
+
+/* ---------- Banner 5 Contact Us Start ---------- */
+
+/* row 1 */
+
+/* row 1 left column */
+
+.get_in_title {
+    color: var(--color-3);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.get_in_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: var(--color-2);
+}
+
+/* row 1 left column row 1 */
+
+.communicat_with_us {
+    display: flex;
+}
+
+.communicat_with_us a {
+    text-decoration: none;
+    color: var(--color-3);
+    background-color: var(--color-10);
+    cursor: pointer;
+}
+
+.communicat_with_us a:hover {
+    background: var(--color-9);
+    color: var(--color-1);
+    transition: 0.3s;
+}
+
+.icon_styling {
+    width: 20%;
+}
+
+.icon_styling img {
+    width: 85%;
+}
+
+.contact_us_card {
+    background: var(--color-6);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.contact_card_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.Contact_card_text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
+}
+
+/* row 1 right column */
+
+.aImg {
+    border-radius: 10px;
+}
+
+/* ---------- Banner 5 Contact Us End ---------- */
+
+/* -------------------------- FOOTER Start -------------------------- */
+
+.footer__col h6 {
+    color: var(--color-1);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer__col p {
+    color: var(--color-1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.footer__col a {
+    text-decoration: none;
+}
+
+.website__logo img {
+    width: 30%;
+}
+
+.footer__col__img {
+    width: 100%;
+}
+
+.footer__col__img img {
+    width: 70%;
+    /* height: 115px; */
+}
+
+.footer__button {
+    background: var(--color-10);
+    border-radius: 10px;
+    color: var(--color-9);
+    font-weight: 400;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+
+.footer__col .footer__button:hover {
+    background: var(--color-9) !important;
+    color: var(--color-3) !important;
+}
+
+.website__logo:hover {
+    background: none !important;
+}
+
+.footer__col3 ul li a {
+    text-decoration: none;
+    color: var(--color-1);
+    transition: all .2s ease-in-out;
+}
+
+.footer__col3 ul li a:hover {
+    color: var(--color-10) !important;
+    background: none !important;
+}
+
+.footer__col3 ul li {
+    list-style-type: none;
+}
+
+.footer__col3 li:not(:last-child) {
+    padding-bottom: .5rem !important;
+}
+
+.footer__col3 ul {
+    padding-left: 0;
+}
+
+.footer__col3 h6 {
+    color: var(--color-1);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__social i {
+    color: var(--color-1);
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.footer__social i:hover {
+    color: var(--color-10);
+}
+
+.footer__row__2 ul {
+    display: flex;
+    padding-left: 0;
+    gap: 1rem;
+}
+
+.footer__row__2 ul li {
+    list-style-type: none;
+}
+
+.footer__row__2 ul li a {
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.footer__row__2 {
+    color: var(--color-2);
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands,
+.fab {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+hr {
+    color: var(--color-2);
+}
+
+/* -------------------------- FOOTER End -------------------------- */

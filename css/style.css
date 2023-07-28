@@ -341,9 +341,9 @@ body {
 
 /* Category Carousel Content */
 
-
-
-
+.feature_cat_main {
+    position: relative;
+}
 
 .feature_cat_title {
     font-weight: 600;
@@ -466,32 +466,45 @@ a_tag a {
     border-radius: 10px;
 }
 
-/* .gallery_card1 {
+.gallery_card1 {
     background-color: var(--color-6);
     border-radius: 10px;
     padding: 25px;
-    box-shadow: 0 0 1px var(--color-10),
-        0 0 1px var(--color-10),
-        0 0 5px var(--color-10),
-        0 0 10px var(--color-10),
-        0 0 10px var(--color-10),
-        0 0 0px var(--color-10);
-    -webkit-animation: blink 0.7s infinite alternate;
-    animation: blink 0.7s infinite alternate;
+    box-shadow: -1px 1px 12px #375559;
     text-decoration: none;
-} */
+    height: 320px;
+}
 
+@keyframes hoverAnimation {
+    0% {
+        transform: scale(1);
+        /* Normal size */
+    }
 
+    50% {
+        transform: scale(1.05);
+        /* Scale up slightly */
+    }
 
-/* .gallery_card1:hover {
+    100% {
+        transform: scale(1);
+        /* Back to normal size */
+    }
+}
+
+.gallery_card1:hover {
+    animation: hoverAnimation 0.5s initial;
+}
+
+.gallery_card1:hover {
     background-color: var(--color-5);
     border-radius: 10px;
-    padding: 25px;
+    padding: 0 0 25px 0;
     box-shadow: 0 0 2px var(--color-9), 0 0 10px var(--color-9), 0 0 5px var(--color-9), 0 0 5px var(--color-9),
         0 0 5px var(--color-9), 0 0 5px var(--color-9);
     -webkit-animation: blink 0.7s infinite alternate;
     animation: blink 0.7s infinite alternate;
-} */
+}
 
 .gallery_img {
     width: 100%;
@@ -589,6 +602,49 @@ a_tag a {
 /* ---------- Banner 4 Request a Quote End ---------- */
 
 /* ---------- Banner 5 Contact Us Start ---------- */
+
+.contant_us_main {
+    position: relative;
+}
+
+/* Contact-Us-BG-Side-Img */
+
+.contact__bg__img {
+    background-image: url(/images/background-img/featured_bg_img3.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    object-fit: cover;
+    background-size: contain;
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    z-index: -1;
+    top: -180px;
+    right: 0;
+    animation: vipAnimation 7s infinite;
+
+}
+
+/* Keyframes for the VIP animation */
+@keyframes vipAnimation {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end position: no vertical translation */
+    }
+
+    25%,
+    75% {
+        transform: translateY(-15px);
+        /* Middle position: translate 15 pixels up */
+    }
+
+    50% {
+        transform: translateY(-30px);
+        /* Peak position: translate 30 pixels up */
+    }
+}
 
 /* row 1 */
 

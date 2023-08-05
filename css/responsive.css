@@ -45,6 +45,11 @@
     .location__input {
         margin-right: 0;
     }
+
+    /* Background Image 1 */
+    .contact__bg__img {
+        top: -499px;
+    }
 }
 
 @media (min-width: 525px) and (max-width: 786px) {
@@ -98,6 +103,11 @@
     .communicat_with_us {
         display: flex;
         flex-direction: column;
+    }
+
+    /* Background Image 1 */
+    .contact__bg__img {
+        top: -499px;
     }
 }
 
@@ -153,6 +163,12 @@
         display: flex;
         flex-direction: column;
     }
+
+    /* Background Image 1 */
+
+    .contact__bg__img {
+        top: -499px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -170,7 +186,7 @@
     /* Background Image 1 */
 
     .index__bg__img {
-        top: -28px;
+        top: -50px;
     }
 
     /* Positioned Search Container of Banner 1 */
@@ -212,6 +228,11 @@
     .communicat_with_us {
         display: flex;
         flex-direction: column;
+    }
+
+    /* Background Image 1 */
+    .contact__bg__img {
+        top: -499px;
     }
 }
 

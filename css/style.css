@@ -15,6 +15,8 @@
     --color-8: #575757;
     --color-9: #00349A;
     --color-10: #18BEF0;
+    --bg-color: #dfe6e9;
+    --text-color: white;
 }
 
 body {
@@ -24,7 +26,15 @@ body {
 /* Customized Margin */
 
 .mt-6 {
-    margin-top: 5rem;
+    margin-top: 7rem;
+}
+
+.mt-7 {
+    margin-top: 10rem;
+}
+
+.mt-lg-7 {
+    margin-top: 10rem;
 }
 
 /* Customized Padding */
@@ -124,7 +134,7 @@ body {
 /* Background Image */
 
 .index__bg__img {
-    background-image: url(/images/background-img/bg-img.png);
+    background-image: url(../images/background-img/bg-img.png);
     background-repeat: no-repeat;
     background-position: left;
     object-fit: cover;
@@ -552,13 +562,244 @@ a_tag a {
 
 /* ---------- Banner 3 Service Cards End ---------- */
 
+/* ---------- Banner 4 Why you choose this marketplace Start ---------- */
+
+.marketplace__card {
+    height: 230px;
+    background: var(--color-6);
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    padding: 25px 30px;
+    color: var(--color-10);
+    box-shadow: -1px 1px 12px #375559;
+}
+
+.marketplace__card::after {
+    content: '';
+    background: var(--color-10);
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    clip-path: circle(10% at 0% 0%);
+    transition: all .3s ease-in;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease-in;
+}
+
+.content h1 {
+    font-size: 28px;
+}
+
+.marketplace__card:hover::after {
+    clip-path: circle(100%);
+}
+
+.marketplace__card:hover .content {
+    color: var(--text-color);
+}
+
+/* ---------- Banner 4 Why you choose this marketplace End ---------- */
+
+/* ---------- Banner 5 Cleaning with Care and Eco-Friendly Products Conunter Start ---------- */
+
+.cleaning__care {
+    position: relative;
+    margin-top: 10rem;
+}
+
+.cleaning__care .cleaning__care__div__1 {
+    background-image: url(../images/cleaning-care/clean4.jpg);
+    height: 70vh;
+    width: 64%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+}
+
+.cleaning__care .cleaning__care__div__1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 118, 158, 0.76);
+    /* Adjust the alpha value to control the darkness */
+    z-index: 1;
+}
+
+.cleaning__care .cleaning__care__div__2 {
+    background-image: url(../images/cleaning-care/clean5.jpg);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 80vh;
+    z-index: -2;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cleaning__care__div__1__content {
+    margin-top: -35rem;
+    color: var(--color-4);
+}
+
+.cleaning__care__div__1__content a {
+    color: var(--color-4);
+    text-decoration: none;
+}
+
+.available_div {
+    background-color: var(--color-10);
+    width: 55%;
+    padding: 20px;
+    box-shadow: -1px 1px 12px #375559;
+}
+
+.available_div {
+    display: flex;
+}
+
+.available_div_img {
+    width: 30%;
+}
+
+.available_div_img img {
+    width: 100%;
+}
+
+.available_div_content {
+    margin-top: 7px;
+}
+
+.sectionClass {
+    position: relative;
+    display: block;
+    backdrop-filter: blur(10px);
+    margin-top: -9rem;
+    box-shadow: -1px 1px 12px #375559;
+}
+
+.fullWidth {
+    width: 100% !important;
+    display: table;
+    float: none;
+    padding: 0;
+    min-height: 1px;
+    height: 100%;
+    position: relative;
+}
+
+.sectiontitle {
+    background-position: center;
+    margin: 30px 0 0px;
+    text-align: center;
+    min-height: 20px;
+}
+
+.sectiontitle h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.headerLine {
+    width: 160px;
+    height: 2px;
+    display: inline-block;
+    background: #101F2E;
+}
+
+
+.projectFactsWrap {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#projectFacts .fullWidth {
+    padding: 0;
+}
+
+.projectFactsWrap .item {
+    padding: 50px 0px;
+    text-align: center;
+    /* background: rgb(16, 31, 46); */
+
+}
+
+.projectFactsWrap .item p.number {
+    font-size: 40px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.projectFactsWrap .item p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.projectFactsWrap .item span {
+    width: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.projectFactsWrap .item i {
+    vertical-align: middle;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.projectFactsWrap .item:hover i,
+.projectFactsWrap .item:hover p {
+    color: white;
+}
+
+.projectFactsWrap .item:hover span {
+    background: white;
+}
+
+/* ---------- Banner 5 Cleaning with Care and Eco-Friendly Products Conunter End ---------- */
+
+/* ---------- Banner 6 What Client Says Start ---------- */
+
+
+
+/* ---------- Banner 6 What Client Says Ends ---------- */
+
 /* ---------- Banner 4 Request a Quote Start ---------- */
 
 /* Parallex on Background image */
 
 .parallax-1 {
     height: 50vh;
-    background: url('/images/retuest-a-quote/quotebgd.png') repeat fixed 70%;
+    background: url('../images/retuest-a-quote/quotebgd.png') repeat fixed 70%;
     background-size: cover;
     color: aliceblue;
 }
@@ -610,7 +851,7 @@ a_tag a {
 /* Contact-Us-BG-Side-Img */
 
 .contact__bg__img {
-    background-image: url(/images/background-img/featured_bg_img3.png);
+    background-image: url(../images/background-img/featured_bg_img3.png);
     background-repeat: no-repeat;
     background-position: left;
     object-fit: cover;

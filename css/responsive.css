@@ -16,6 +16,12 @@
     .search__button {
         right: 4%;
     }
+
+    /* Banner 5 Cleaning with Care and Eco-Friendly Products Conunter*/
+
+    .available_div {
+        width: 75%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -49,6 +55,33 @@
     /* Background Image 1 */
     .contact__bg__img {
         top: -499px;
+    }
+
+    /* Banner 5 Cleaning with Care and Eco-Friendly Products Conunter*/
+
+    .available_div {
+        width: 46%;
+    }
+
+    .cleaning__care .cleaning__care__div__2 {
+        display: none;
+    }
+
+    .cleaning__care .cleaning__care__div__1 {
+        width: 100%;
+    }
+
+    .cleaning__care__div__1__content {
+        margin-top: -34rem;
+        color: var(--color-4);
+    }
+
+    .sectionClass {
+        margin-top: -13rem;
+    }
+
+    .cleaning__care {
+        margin-top: 4rem;
     }
 }
 
@@ -109,6 +142,34 @@
     .contact__bg__img {
         top: -499px;
     }
+
+    /* Banner 5 Cleaning with Care and Eco-Friendly Products Conunter*/
+
+    .available_div {
+        width: 60%;
+    }
+
+    .cleaning__care .cleaning__care__div__2 {
+        display: none;
+    }
+
+    .cleaning__care .cleaning__care__div__1 {
+        width: 100%;
+    }
+
+    .sectionClass {
+        backdrop-filter: blur(0px);
+        margin-top: 0;
+        box-shadow: none;
+    }
+
+    .cleaning__care__div__1__content {
+        margin-top: -30rem;
+    }
+
+    .cleaning__care {
+        margin-top: 3rem;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 525px) {
@@ -168,6 +229,30 @@
 
     .contact__bg__img {
         top: -499px;
+    }
+
+    /* Banner 5 Cleaning with Care and Eco-Friendly Products Conunter*/
+
+    .available_div {
+        width: 80%;
+    }
+
+    .cleaning__care .cleaning__care__div__2 {
+        display: none;
+    }
+
+    .cleaning__care .cleaning__care__div__1 {
+        width: 100%;
+    }
+
+    .sectionClass {
+        backdrop-filter: blur(0px);
+        margin-top: 0;
+        box-shadow: none;
+    }
+
+    .cleaning__care {
+        margin-top: 3rem;
     }
 }
 
@@ -233,6 +318,30 @@
     /* Background Image 1 */
     .contact__bg__img {
         top: -499px;
+    }
+
+    /* Banner 5 Cleaning with Care and Eco-Friendly Products Conunter*/
+
+    .available_div {
+        width: 100%;
+    }
+
+    .cleaning__care .cleaning__care__div__2 {
+        display: none;
+    }
+
+    .cleaning__care .cleaning__care__div__1 {
+        width: 100%;
+    }
+
+    .sectionClass {
+        backdrop-filter: blur(0px);
+        margin-top: 0;
+        box-shadow: none;
+    }
+
+    .cleaning__care {
+        margin-top: 3rem;
     }
 }
 
